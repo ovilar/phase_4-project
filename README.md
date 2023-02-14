@@ -1,5 +1,5 @@
 # Time Series Project: Predicting House Prices
-In this project, I work with a dataset from Zillow that has house prices over the course of several 
+In this project, I work with a dataset from <a href='www.zillow.com' alt='Zillow'>Zillow</a> that has house prices over the course of several 
 month-years, starting in 1996. The dataset also provides other information such as: zip code, region, 
 county name and city - to name a few. I analyze these series using a time series approach and provide 
 recommendations for an hypothetical real estate firm.
@@ -15,7 +15,7 @@ problem, besides the investment firm, are: general public and outside investors,
 municipalities and counties and communities in general.
 
 ## Data and Analysis
-The dataset used is a time series from Zillow, that has house prices over the course of Apr/96 through 
+The dataset used is a collection of time series with house prices over the course of Apr/96 through 
 Apr/18. Besides prices, there are the other categorical variables: RegionID, RegionName, City, State, 
 Metro, CountyName and SizeRank.
 
@@ -41,7 +41,7 @@ results for our three locations.
 Using a time series approach I provide a SARIMAX model that is able to perform well both with training and testing data. Root-mean squared errors 
 are less than 3% of the historical mean prices. Thus, one can infer the model is good to predict with a certain accuracy house prices. The model is 
 inversely as good as the time horizon increases, so for shorter-term forecast (up to 24-months) we have more precise price estimates.
-<img src='' alt='Forecast of Mean Prices - 60-month window'>
+<img src='https://github.com/ovilar/phase_4-project/blob/main/img/img01.png' alt='Forecast of Mean Prices - 60-month window'>
 
 ### Takeaways and Recommendations
 The best historical risk-weighted return is located in Suffolk, NY, followed by Palm Beach, FL and 
