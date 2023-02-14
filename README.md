@@ -22,13 +22,36 @@ Metro, CountyName and SizeRank.
 Splitting and ranking the dataset into the top 10 counties with respect to median prices, we end up with 
 the following locations:
 
-<img src='' alt='Top Counties - Median Price, 1996-2018'>
+<img src='https://github.com/ovilar/phase_4-project/blob/main/img/img00.png' alt='Top Counties - Median 
+Price, 1996-2018'>
 
-## Time Series Workflow
+I rank which counties are the most valuable with respect to their median and mean and assessing how they fare with respect to risk (i.e. standard
+deviation). I also provide the evolution of house prices with respect to price, their 12-month window rolling statistics (mean/std. 
+deviation) and the log returns. From this initial filtering, we end up with 3 counties as the best risk-weighted returns: Suffolk, NY; Palm 
+Beach, FL and Miami-Dade, FL.
+
+## Time Series Workflow 
+I start with testing stationarity and performing a seasonal decomposition to assess the best combination of Autoregression Integrated Moving 
+Average factors (i.e. p, d, q) and Seasonal Factors (p, d, q, s). Given computational constraints, I limit those to 1 round of runs (even though 
+I also provide examples with 2 runs). Then, Autocorrelation and Partial Autocorrelation plots are provided to check the consistency of the 
+seasonal decomposition findings. Lastly, I perform Root-Mean Square tests on both training and testing data - which both provide satisfying 
+results for our three locations.
 
 ## Conclusion
+Using a time series approach I provide a SARIMAX model that is able to perform well both with training and testing data. Root-mean squared errors 
+are less than 3% of the historical mean prices. Thus, one can infer the model is good to predict with a certain accuracy house prices. The model is 
+inversely as good as the time horizon increases, so for shorter-term forecast (up to 24-months) we have more precise price estimates.
+<img src='' alt='Forecast of Mean Prices - 60-month window'>
 
-### Recommendation
+### Takeaways and Recommendations
+The best historical risk-weighted return is located in Suffolk, NY, followed by Palm Beach, FL and 
+Miami-Dade, FL. So the investor can pursue two distinct strategies:
+
+<ul>
+<li>Divide and Conquer - investing in the  best bang for the buck county/location all at once;</li>
+<li>Rays of the Sun - choosing one specific location and irradiating the strategy within that county;</li>
+<li>Alternative - investing in more established counties.</li>
+</ul>
 
 ### Further Research
 I list below some ideas about further research:
@@ -45,7 +68,8 @@ the sake of space, I do not make the dataset available.
 
 Here you will find:
 <ul>
-<li>Presentation file;</li>
+<li><a href='https://github.com/ovilar/phase_4-project/blob/main/presentation.pdf'>Presentation 
+file</a>;</li>
 <li>Jupyter Notebook;</li>
 <li>README.md file;</li>
 <li>Image Folder.</li>
