@@ -22,7 +22,7 @@ Metro, CountyName and SizeRank.
 Splitting and ranking the dataset into the top 10 counties with respect to median prices, we end up with 
 the following locations:
 
-<img src='https://github.com/ovilar/phase_4-project/blob/main/img/img00.png' alt='Top Counties - Median 
+<img src='https://github.com/ovilar/phase_4-project/blob/main/img/county_trend.png' alt='Top Counties - Median 
 Price, 1996-2018'>
 
 I rank which counties are the most valuable with respect to their median and mean and assessing how they fare with respect to risk (i.e. standard
@@ -41,7 +41,7 @@ results for our three locations.
 Using a time series approach I provide a SARIMAX model that is able to perform well both with training and testing data. Root-mean squared errors 
 are less than 3% of the historical mean prices. Thus, one can infer the model is good to predict with a certain accuracy house prices. The model is 
 inversely as good as the time horizon increases, so for shorter-term forecast (up to 24-months) we have more precise price estimates.
-<img src='https://github.com/ovilar/phase_4-project/blob/main/img/img01.png' alt='Forecast of Mean Prices - 60-month window'>
+<img src='https://github.com/ovilar/phase_4-project/blob/main/img/forecast.png' alt='Mean Prices Forecast - 60-month window'>
 
 ### Takeaways and Recommendations
 The best historical risk-weighted return is located in Suffolk, NY, followed by Palm Beach, FL and 
