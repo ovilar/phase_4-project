@@ -63,8 +63,7 @@ district data, etc.);</li>
 </ul>
 
 ## Instructions
-This repository provides basic guidelines on how to navigate through this notebook and its material. For 
-the sake of space, I do not make the dataset available.
+This repository provides basic guidelines on how to navigate through this notebook and its material.
 
 Here you will find:
 <ul>
@@ -72,6 +71,7 @@ Here you will find:
 file</a>;</li>
 <li>Jupyter Notebook;</li>
 <li>README.md file;</li>
-<li>Image Folder.</li>
+<li>Image Folder;</li>
+<li>Data (.CSV) folder.</li>
 </ul>
 Feel free to reach out if you have any critique, suggestion or correction.
